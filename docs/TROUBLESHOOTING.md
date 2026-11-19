@@ -64,4 +64,4 @@ In **Studio → Studio Setup → MIDI Port Setup**:
 ---
 
 ## Still stuck?
-Contact support: [CubaseBridge-Support](https://github.com/Wuestenrolph/CubaseBridge-Support/issues). Please include your OS, Cubase version, Stream Deck model and a screenshot of the Setup Assistant.
+Ask in [Discussions → Q&A](https://github.com/Wuestenrolph/CubaseBridge-Support/discussions/categories/q-a) or report a bug at [CubaseBridge-Support](https://github.com/Wuestenrolph/CubaseBridge-Support/issues/new/choose). Please include your OS, Cubase version, Stream Deck model and a screenshot of the Setup Assistant.
