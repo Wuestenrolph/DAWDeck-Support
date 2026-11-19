@@ -1,0 +1,88 @@
+name: Bug report
+description: Something in CubaseBridge does not work as described.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please check the [troubleshooting guide](https://github.com/Wuestenrolph/CubaseBridge-Support/blob/main/docs/TROUBLESHOOTING.md) first.
+        **This issue is public** — don't include personal data, private project names or contact details.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: CubaseBridge version
+      description: Stream Deck app → Preferences → Plugins → CubaseBridge
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: cubase-version
+    attributes:
+      label: Cubase version
+      options: ["Cubase Pro 15", "Cubase Pro 14", "Cubase Pro 13", "Cubase Pro 12", "Other (please specify below)"]
+    validations:
+      required: true
+  - type: input
+    id: cubase-build
+    attributes:
+      label: Exact Cubase build
+      description: Cubase → Help → About Cubase
+      placeholder: "15.0.20"
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: ["Windows 11", "Windows 10", "macOS (Apple Silicon)", "macOS (Intel)"]
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Stream Deck model
+      options: ["Stream Deck XL", "Stream Deck MK.2 / Classic", "Stream Deck Neo", "Stream Deck +", "Stream Deck Mini", "Other"]
+    validations:
+      required: true
+  - type: input
+    id: sd-version
+    attributes:
+      label: Stream Deck app version
+      placeholder: "7.6.1"
+  - type: dropdown
+    id: setup-status
+    attributes:
+      label: Setup Assistant status
+      description: Click any CubaseBridge key in the Stream Deck app and look at the three indicators at the top.
+      options: ["All three green", "MIDI In red", "MIDI Out red", "Cubase script not green", "Several red"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Already tried
+      options:
+        - label: "Windows only: restarted loopMIDI completely after creating the ports"
+        - label: "Unticked In 'All MIDI Inputs' for Cubase-To-SDXL in Cubase"
+        - label: "Reloaded scripts in Cubase (MIDI Remote Manager → ↻)"
+        - label: "Clicked Refresh / Resync in the Setup Assistant"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select a track in Cubase
+        2. Press the Rec Arm key
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: A screenshot of the Setup Assistant and of Cubase's MIDI Remote Manager helps a lot.

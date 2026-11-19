@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest a new key, command or improvement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "**This issue is public** — don't include personal data or private project names."
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Which studio workflow is this for?
+      description: Describe the situation in your session (tracking, punching, comping, mixing, Control Room…).
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What should CubaseBridge do?
+      description: If it's a Cubase command, give its name as shown in Cubase's Key Commands dialog.
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Stream Deck model
+      options: ["Stream Deck XL", "Stream Deck MK.2 / Classic", "Stream Deck Neo", "Stream Deck +", "Stream Deck Mini", "Any"]
