@@ -15,6 +15,8 @@ Setting up CubaseBridge takes about five minutes. You need two virtual MIDI port
 2. The Stream Deck app asks whether to install the bundled profiles — **confirm**.
 3. In the Stream Deck app, select the **CubaseBridge** profile for your device (XL, MK.2, Neo, + or Mini).
 
+> **Stream Deck +:** the profile pre-fills the keys. For Quick Controls on the dials, open the last page (*Quick Controls*), drag the **Quick Control Dial** action from the CubaseBridge category onto each of the four dials — no further settings needed.
+
 > The profile only works with the View keys (page navigation) when it was installed this way. Importing a `.streamDeckProfile` file by hand creates a copy the plugin cannot navigate.
 
 ---

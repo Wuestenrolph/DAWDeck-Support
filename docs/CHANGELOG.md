@@ -11,6 +11,7 @@ All notable changes to CubaseBridge. Versions follow the Stream Deck manifest (`
 - Recording commands: Auto Punch In/Out, Pre-/Post-Roll, Count-In, locators, punch points, quick markers, Retrospective Record (Audio/MIDI), Bad Take!, Track Versions, lanes, comping tools, edits, clip gain, Render in Place, VariAudio, Undo/Redo, Save New Version, Constrain Delay Compensation.
 - Control Room: Talkback, DIM, Mono, Monitor A/B, Cue 1/2 click — native feedback on Cubase 13–15.
 - Studio Macro action: up to 16 steps with per-step delays, 5 templates, 6 color themes, live progress.
+- Quick Controls: the 8 Quick Controls of the focused plug-in (with Focus Lock) or the selected track, with live parameter names and values; ▲/▼ with accelerating auto-repeat, plug-in focus switching, a Quick Controls page in every profile (XL: ▲ / value / ▼ for all 8), and a Quick Control Dial action for Stream Deck + (rotate / press = QC 1–4 ↔ 5–8 / touch = source).
 - Profiles for Stream Deck XL, MK.2, Neo, + and Mini with page navigation.
 - Setup Assistant in every Property Inspector: live MIDI status, 1-click Cubase script install/update, Windows/macOS port guide (incl. the Windows 11 loopMIDI restart and Cubase "All MIDI Inputs" tips).
 

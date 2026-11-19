@@ -42,6 +42,12 @@ In **Studio → Studio Setup → MIDI Port Setup**:
 - Check the two Windows 11 / loop items above — a silent port looks exactly like this.
 - After updating the plugin, re-install the Cubase script (Setup Assistant shows *Update available*) and reload scripts.
 
+## Quick Control keys show "QC 1 … —" without names
+
+- **Focus source:** Cubase reports the Quick Controls of the plug-in window that was **last clicked inside Cubase**. Click once onto the plug-in's surface (not only its title bar). Use **Focus Lock** to keep that plug-in while you click elsewhere.
+- **Track source:** the selected track has no Quick Controls assigned (common on audio tracks). Assign them in the Inspector → *Quick Controls*, or switch the **Source** key to *Focus*.
+- Long names and values are shortened to 16 characters on the keys.
+
 ## The profile is missing or the View keys do nothing
 
 - The bundled profiles are installed when the plugin is installed from the Marketplace or from a `.streamDeckPlugin` file; the Stream Deck app asks you to confirm.
@@ -60,6 +66,8 @@ In **Studio → Studio Setup → MIDI Port Setup**:
 | Umlauts and other special characters in track names show as `?` | Names are transferred as plain ASCII over MIDI. |
 | Track names are cut after ~10 characters on meter keys | The 96×96 key has room for about 10 characters. |
 | Control Room keys need Control Room to be enabled | Enable it in **Studio → Audio Connections → Control Room**. |
+| One ▲/▼ press moves a Quick Control only a little | Each press is one Cubase step (fine). Hold the key: the auto-repeat speeds up after about a second. The Stream Deck + dials send every tick for fast sweeps. |
+| Stream Deck + dials are empty after installing the profile | The dial action is not pre-assigned by the profile; drag **Quick Control Dial** onto the four dials once (see INSTALLATION). |
 
 ---
 
