@@ -11,7 +11,7 @@ Status for release **1.0.0**. "Verified" means checked against the real Cubase f
 | API members used by the script | ⚠️ not verified (Cubase 12 not installed on the test system) | ⚠️ not verified | ✅ verified against installed API | ✅ verified against installed API |
 | Live test (bidirectional, 21 checks + meters) | — | — | — | ✅ passed |
 | Control Room feedback | Key-command fallback | ✅ native | ✅ native | ✅ native |
-| Quick Controls (Focus + Track, Focus Lock) | API members not verified (Cubase 12 not installed) — feature-detected | API members not verified — feature-detected | ✅ API verified | ✅ live-tested (Waves, FabFilter plug-ins) |
+| Quick Controls (Focus + Track, Focus Lock) | API members not verified (Cubase 12 not installed) — feature-detected | API members not verified — feature-detected | ✅ API verified | ✅ live-tested: Steinberg plug-ins out of the box; Waves Harmony, FabFilter Pro-Q 3 (parameters assigned via right-click → Add to Quick Controls) |
 | True stereo meters | Feature-detected: stereo if the build offers per-channel meters, otherwise one summed level on both bars (not verified) | same as Cubase 12 (not verified) | ✅ per-channel meter API present | ✅ per-channel meter API present |
 
 **Safety net for older versions:** the Cubase script checks every version-sensitive API member before using it. If a Cubase build lacks one, only that single key function stays inactive — the rest of the surface keeps working. This follows Steinberg's guidance to use feature detection across API versions.

@@ -66,6 +66,7 @@ The names must match exactly:
 - In the Setup Assistant, click **Refresh / Resync** — all three indicators should be green (MIDI In, MIDI Out, Cubase script).
 - Select a track in Cubase: the Auto-Follow keys show its name and color.
 - Press Play on the Stream Deck: the transport keys and Bar.Beat display follow Cubase.
+- Open a plug-in window in Cubase, click into it, and go to the **Quick Controls** page: the keys show its parameter names and values. For third-party plug-ins, pick the parameters you want with a right-click → **Add '…' to Quick Controls** (see [TROUBLESHOOTING.md](TROUBLESHOOTING.md#quick-controls-show-the-wrong-parameters-of-a-plug-in)).
 
 Something not working? See [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 

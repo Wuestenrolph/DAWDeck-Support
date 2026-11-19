@@ -48,6 +48,17 @@ In **Studio → Studio Setup → MIDI Port Setup**:
 - **Track source:** the selected track has no Quick Controls assigned (common on audio tracks). Assign them in the Inspector → *Quick Controls*, or switch the **Source** key to *Focus*.
 - Long names and values are shortened to 16 characters on the keys.
 
+## Quick Controls show the "wrong" parameters of a plug-in
+
+**Steinberg plug-ins** come with useful Quick Control assignments and work right away. **Third-party plug-ins** get Cubase's default assignment, which is often their global settings. Example: FabFilter Pro-Q 3 starts with *Gain Scale, Output Level, Output Pan, Bypass, Auto Gain …* instead of the EQ bands.
+
+To choose the parameters yourself:
+1. Open the plug-in window in Cubase.
+2. **Right-click the parameter** you want on the keys (e.g. a band's gain or frequency) and choose **Add '…' to Quick Controls** — or **Add '…' to Quick Controls Slot** to pick the slot and replace one you don't need.
+3. Repeat for up to 8 parameters. The CubaseBridge keys update immediately.
+
+Verified with FabFilter Pro-Q 3. Cubase offers this right-click option for VST 3 plug-ins that support it.
+
 ## The profile is missing or the View keys do nothing
 
 - The bundled profiles are installed when the plugin is installed from the Marketplace or from a `.streamDeckPlugin` file; the Stream Deck app asks you to confirm.
