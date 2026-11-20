@@ -1,6 +1,6 @@
 # Installation Guide
 
-> Using REAPER? See [DAWDeck for REAPER](REAPER.md) instead. This guide covers **DAWDeck for Cubase & Nuendo**.
+> Using REAPER or Ableton Live? See [DAWDeck for REAPER](REAPER.md) or [DAWDeck for Ableton Live](ABLETON.md) instead. This guide covers **DAWDeck for Cubase & Nuendo**.
 
 Setting up DAWDeck takes about five minutes. You need two virtual MIDI ports, the Cubase script and the Stream Deck profile.
 

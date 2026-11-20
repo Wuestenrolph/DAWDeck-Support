@@ -1,6 +1,7 @@
 # Troubleshooting & Known Quirks
 
 > REAPER problems: see the troubleshooting section in [DAWDeck for REAPER](REAPER.md).
+> Ableton Live problems: see the troubleshooting section in [DAWDeck for Ableton Live](ABLETON.md).
 
 Start with the **Setup Assistant** (click any DAWDeck key in the Stream Deck app). Its three indicators tell you where the problem is: **MIDI In**, **MIDI Out** and **MIDI Remote script** (one status covering Cubase and/or Nuendo; hover it to see each host's path). Everything in this guide applies to Nuendo too.
 
