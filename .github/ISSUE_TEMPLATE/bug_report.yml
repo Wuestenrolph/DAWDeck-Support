@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in DAWDeck (Cubase, Nuendo or REAPER) does not work as described.
+description: Something in DAWDeck (Cubase, Nuendo, REAPER or Ableton Live) does not work as described.
 title: "[Bug] "
 labels: ["bug", "triage"]
 body:
@@ -12,7 +12,7 @@ body:
     id: plugin
     attributes:
       label: Plugin
-      options: ["DAWDeck for Cubase & Nuendo", "DAWDeck for REAPER"]
+      options: ["DAWDeck for Cubase & Nuendo", "DAWDeck for REAPER", "DAWDeck for Ableton Live"]
     validations:
       required: true
   - type: input
@@ -27,14 +27,14 @@ body:
     id: daw-version
     attributes:
       label: DAW and version
-      options: ["Cubase Pro 15", "Cubase Pro 14", "Cubase Pro 13", "Cubase Pro 12", "Nuendo 15", "Nuendo 14", "Nuendo 13", "Nuendo 12", "REAPER 7", "Other (please specify below)"]
+      options: ["Cubase Pro 15", "Cubase Pro 14", "Cubase Pro 13", "Cubase Pro 12", "Nuendo 15", "Nuendo 14", "Nuendo 13", "Nuendo 12", "REAPER 7", "Ableton Live 12", "Other (please specify below)"]
     validations:
       required: true
   - type: input
     id: cubase-build
     attributes:
       label: Exact DAW build
-      description: "Cubase/Nuendo: Help → About. REAPER: Help → About REAPER."
+      description: "Cubase/Nuendo: Help → About. REAPER: Help → About REAPER. Ableton Live: Help → About Live."
       placeholder: "15.0.20"
   - type: dropdown
     id: os
@@ -60,7 +60,7 @@ body:
     attributes:
       label: Setup Assistant status
       description: Click any DAWDeck key in the Stream Deck app and look at the indicators at the top.
-      options: ["All green", "Cubase/Nuendo: MIDI In red", "Cubase/Nuendo: MIDI Out red", "Cubase/Nuendo: script not green", "REAPER: OSC pattern not green", "REAPER: OSC connection red", "Several red"]
+      options: ["All green", "Cubase/Nuendo: MIDI In red", "Cubase/Nuendo: MIDI Out red", "Cubase/Nuendo: script not green", "REAPER: OSC pattern not green", "REAPER: OSC connection red", "Ableton Live: Remote Script not green", "Ableton Live: OSC link red", "Several red"]
     validations:
       required: true
   - type: checkboxes
@@ -73,6 +73,7 @@ body:
         - label: "Cubase/Nuendo only: reloaded scripts (MIDI Remote Manager → ↻)"
         - label: "Clicked Refresh / Resync in the Setup Assistant"
         - label: "REAPER only: OSC surface uses pattern DAWDeck, device port 9000, listen port 8000"
+        - label: "Ableton Live only: Control Surface DAWDeck selected (Input/Output None) and Live restarted after installing the Remote Script"
   - type: textarea
     id: what-happened
     attributes:
@@ -93,4 +94,4 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: A screenshot of the Setup Assistant (and of Cubase's MIDI Remote Manager or REAPER's OSC settings) helps a lot.
+      description: A screenshot of the Setup Assistant (and of Cubase's MIDI Remote Manager, REAPER's OSC settings or Live's Link, Tempo & MIDI settings) helps a lot.

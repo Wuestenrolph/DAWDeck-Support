@@ -10,7 +10,7 @@ body:
     id: plugin
     attributes:
       label: For which DAW?
-      options: ["Cubase", "Nuendo", "REAPER", "All"]
+      options: ["Cubase", "Nuendo", "REAPER", "Ableton Live", "All"]
     validations:
       required: true
   - type: textarea
@@ -24,7 +24,7 @@ body:
     id: proposal
     attributes:
       label: What should DAWDeck do?
-      description: If it's a DAW command, give its name as shown in Cubase's Key Commands dialog or REAPER's Actions list.
+      description: If it's a DAW command, give its name as shown in Cubase's Key Commands dialog REAPER's Actions list or Live's menus.
     validations:
       required: true
   - type: dropdown

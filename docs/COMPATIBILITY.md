@@ -1,6 +1,7 @@
 # Compatibility
 
 > REAPER: see [DAWDeck for REAPER](REAPER.md) (beta, tested against REAPER 7.86).
+> Ableton Live: see [DAWDeck for Ableton Live](ABLETON.md) (beta, tested with Live 12.2.5–12.2.7 on Windows).
 
 Status for release **1.0.0**. "Verified" means checked against the real Cubase files or a running Cubase; it does not mean every feature was exercised on every version.
 
