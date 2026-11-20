@@ -62,8 +62,8 @@ No loopMIDI, IAC Driver or Max for Live needed. Count-In can only be shown, not 
 
 ---
 
-## Upgrading from CubaseBridge / ReaperBridge / AbletonBridge
-DAWDeck is the new name of the earlier betas *CubaseBridge*, *ReaperBridge* and *AbletonBridge*. The plugin IDs changed, so remove the old plugin in the Stream Deck app, install the new one and place your keys again. The Setup Assistant switches off the old Cubase script automatically. In REAPER, select the **DAWDeck** pattern in the OSC surface. In Ableton Live, switch the control surface from `AbletonBridge` to **DAWDeck** (never both at once).
+## Upgrading from CubaseBridge / ReaperBridge
+DAWDeck is the new name of the earlier betas *CubaseBridge* and *ReaperBridge*. The plugin IDs changed, so remove the old plugin in the Stream Deck app, install the new one and place your keys again. The Setup Assistant switches off the old Cubase script automatically. In REAPER, select the **DAWDeck** pattern in the OSC surface.
 
 ---
 

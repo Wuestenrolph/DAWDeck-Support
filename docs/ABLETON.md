@@ -62,10 +62,6 @@ These Cubase features have no equivalent in Live's Remote Script API and are hid
 - The folder must be `Remote Scripts\DAWDeck\` with `__init__.py` directly inside it. Restart Live after copying.
 - If you moved your User Library, the script must be in that location.
 
-**Upgrading from the earlier beta (AbletonBridge)**
-- Remove the old plugin in the Stream Deck app, install DAWDeck for Ableton Live and place the keys again (new action IDs).
-- In Live, switch the control surface from `AbletonBridge` to **DAWDeck**. Do not run both at the same time: they use the same ports. You can delete the old `Remote Scripts\AbletonBridge` folder.
-
 ---
 
 *Unofficial integration for Ableton Live, not affiliated with or endorsed by Ableton AG. Ableton and Ableton Live are trademarks of Ableton AG. Elgato and Stream Deck are trademarks of Corsair Memory, Inc.*
