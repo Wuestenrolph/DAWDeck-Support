@@ -1,5 +1,7 @@
 # Compatibility
 
+> REAPER: see [DAWDeck for REAPER](REAPER.md) (beta, tested against REAPER 7.86).
+
 Status for release **1.0.0**. "Verified" means checked against the real Cubase files or a running Cubase; it does not mean every feature was exercised on every version.
 
 ## Cubase versions
@@ -17,6 +19,16 @@ Status for release **1.0.0**. "Verified" means checked against the real Cubase f
 **Safety net for older versions:** the Cubase script checks every version-sensitive API member before using it. If a Cubase build lacks one, only that single key function stays inactive — the rest of the surface keeps working. This follows Steinberg's guidance to use feature detection across API versions.
 
 The API version is tied to the installed Cubase build. It only changes when Cubase itself is updated (e.g. Cubase 13.0.0 → 13.0.50 through the Steinberg Download Assistant). Recommend buyers install the latest maintenance update of their Cubase version.
+
+## Nuendo
+
+Nuendo 12–15 shares the MIDI Remote API with Cubase (Steinberg lists every API version for "Cubase / Nuendo"), so the same script, ports and protocol are used. The Setup Assistant installs the script into `Documents/Steinberg/Nuendo/MIDI Remote/Driver Scripts/Local/` when that host folder exists.
+
+| | Nuendo 12–15 |
+|---|---|
+| Script install path | ✅ handled by Setup Assistant and `install-windows.ps1` |
+| Key commands used by the script | ⚠️ not verified against Nuendo's key command list (expected identical) |
+| Live test | — not yet done |
 
 ## Stream Deck
 

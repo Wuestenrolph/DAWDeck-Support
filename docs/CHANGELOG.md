@@ -1,6 +1,26 @@
 # Changelog
 
-All notable changes to CubaseBridge. Versions follow the Stream Deck manifest (`major.minor.patch.build`).
+All notable changes to DAWDeck. Versions follow the Stream Deck manifest (`major.minor.patch.build`).
+
+## Unreleased
+
+### Rename
+- New umbrella brand **DAWDeck**: CubaseBridge is now **DAWDeck for Cubase & Nuendo** (`com.dawdeck.cubase`), ReaperBridge is now **DAWDeck for REAPER** (`com.dawdeck.reaper`). Plugin UUIDs, action UUIDs, profiles, the MIDI Remote script (`Local/DAWDeck/StreamDeckXL/DAWDeck_StreamDeckXL.js`), the Colorize PLE presets (*DAWDeck Color 01–16*) and the REAPER OSC pattern (`DAWDeck.ReaperOSC`) are renamed.
+- Upgrading a beta install: remove the old plugin in the Stream Deck app and place the keys again (new UUIDs). The Setup Assistant disables a leftover `CubaseBridge` MIDI Remote script (renamed to `.js.disabled`) so Cubase does not load two drivers; re-run **Install Colorize presets** and, in REAPER, select the `DAWDeck` pattern in the OSC surface.
+- Support repo renamed to `DAWDeck-Support`; buyer docs gained a REAPER guide (`release/REAPER.md`).
+
+### Features
+- 36 extended Studio Commands on MIDI channel 5: Add Track (Audio, Audio Mono, Instrument, MIDI, Group, FX, Folder, Duplicate Tracks), Zoom (In/Out, Full, Selection, Tracks In/Out), Quantize grid (1/4, 1/8, 1/16, 1/32, Triplet, Dotted), Normalize, Reverse, Fade In/Out, Remove Fades, Direct Offline Processing, Bounce, Glue, MixConsole (window and Lower Zone), Pool, MediaBay, Key/Score/Drum Editor, Studio Setup. All names verified against Cubase 15 Key Commands; available in the Studio Command and Studio Macro actions.
+- Control Room: Cue 1–4 on/off and direct Monitor A–D selection with LED feedback on Cubase 13–15 (new SysEx `0x0D`), key-command fallback on Cubase 12; Downmix presets 1–4.
+- Colorize · Color 1–16 commands (Project Logical Editor presets *DAWDeck Color 01–16*) and a Setup Assistant installer for those presets.
+- Installation guide: Stream Deck Mobile (iPhone/iPad) section.
+
+### Licensing
+
+### Protocol
+- MIDI channel 4 reserved for the upcoming Channel Strip, channels 6–7 for the command catalog.
+
+### Experimental
 
 ## 1.0.0 — first public release
 
