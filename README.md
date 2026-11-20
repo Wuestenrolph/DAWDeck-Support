@@ -10,7 +10,7 @@ Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck p
 
 ![DAWDeck on a Stream Deck XL](assets/showcase-xl.png)
 
-> This repository contains documentation and the issue tracker only. The plugins are free during the beta.
+> This repository contains documentation and the issue tracker only. The plugins are in beta.
 
 ---
 
