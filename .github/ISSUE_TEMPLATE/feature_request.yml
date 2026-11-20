@@ -6,6 +6,13 @@ body:
   - type: markdown
     attributes:
       value: "**This issue is public** — don't include personal data or private project names."
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: For which DAW?
+      options: ["Cubase", "Nuendo", "REAPER", "All"]
+    validations:
+      required: true
   - type: textarea
     id: workflow
     attributes:
@@ -16,8 +23,8 @@ body:
   - type: textarea
     id: proposal
     attributes:
-      label: What should CubaseBridge do?
-      description: If it's a Cubase command, give its name as shown in Cubase's Key Commands dialog.
+      label: What should DAWDeck do?
+      description: If it's a DAW command, give its name as shown in Cubase's Key Commands dialog or REAPER's Actions list.
     validations:
       required: true
   - type: dropdown

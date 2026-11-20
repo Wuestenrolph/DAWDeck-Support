@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Setup help & questions
-    url: https://github.com/Wuestenrolph/CubaseBridge-Support/discussions/categories/q-a
+    url: https://github.com/Wuestenrolph/DAWDeck-Support/discussions/categories/q-a
     about: Questions about installation and usage — please ask in Discussions.
   - name: Troubleshooting guide
-    url: https://github.com/Wuestenrolph/CubaseBridge-Support/blob/main/docs/TROUBLESHOOTING.md
-    about: Fixes for the most common setup problems (loopMIDI, MIDI ports, Cubase reload).
+    url: https://github.com/Wuestenrolph/DAWDeck-Support/blob/main/docs/TROUBLESHOOTING.md
+    about: Fixes for the most common setup problems (loopMIDI, MIDI ports, Cubase reload, REAPER OSC).

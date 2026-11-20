@@ -1,33 +1,40 @@
 name: Bug report
-description: Something in CubaseBridge does not work as described.
+description: Something in DAWDeck (Cubase, Nuendo or REAPER) does not work as described.
 title: "[Bug] "
 labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! Please check the [troubleshooting guide](https://github.com/Wuestenrolph/CubaseBridge-Support/blob/main/docs/TROUBLESHOOTING.md) first.
+        Thanks for reporting! Please check the [troubleshooting guide](https://github.com/Wuestenrolph/DAWDeck-Support/blob/main/docs/TROUBLESHOOTING.md) first.
         **This issue is public** — don't include personal data, private project names or contact details.
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      options: ["DAWDeck for Cubase & Nuendo", "DAWDeck for REAPER"]
+    validations:
+      required: true
   - type: input
     id: plugin-version
     attributes:
-      label: CubaseBridge version
-      description: Stream Deck app → Preferences → Plugins → CubaseBridge
+      label: Plugin version
+      description: Stream Deck app → Preferences → Plugins → DAWDeck
       placeholder: "1.0.0"
     validations:
       required: true
   - type: dropdown
-    id: cubase-version
+    id: daw-version
     attributes:
-      label: Cubase version
-      options: ["Cubase Pro 15", "Cubase Pro 14", "Cubase Pro 13", "Cubase Pro 12", "Other (please specify below)"]
+      label: DAW and version
+      options: ["Cubase Pro 15", "Cubase Pro 14", "Cubase Pro 13", "Cubase Pro 12", "Nuendo 15", "Nuendo 14", "Nuendo 13", "Nuendo 12", "REAPER 7", "Other (please specify below)"]
     validations:
       required: true
   - type: input
     id: cubase-build
     attributes:
-      label: Exact Cubase build
-      description: Cubase → Help → About Cubase
+      label: Exact DAW build
+      description: "Cubase/Nuendo: Help → About. REAPER: Help → About REAPER."
       placeholder: "15.0.20"
   - type: dropdown
     id: os
@@ -52,8 +59,8 @@ body:
     id: setup-status
     attributes:
       label: Setup Assistant status
-      description: Click any CubaseBridge key in the Stream Deck app and look at the three indicators at the top.
-      options: ["All three green", "MIDI In red", "MIDI Out red", "Cubase script not green", "Several red"]
+      description: Click any DAWDeck key in the Stream Deck app and look at the indicators at the top.
+      options: ["All green", "Cubase/Nuendo: MIDI In red", "Cubase/Nuendo: MIDI Out red", "Cubase/Nuendo: script not green", "REAPER: OSC pattern not green", "REAPER: OSC connection red", "Several red"]
     validations:
       required: true
   - type: checkboxes
@@ -62,9 +69,10 @@ body:
       label: Already tried
       options:
         - label: "Windows only: restarted loopMIDI completely after creating the ports"
-        - label: "Unticked In 'All MIDI Inputs' for Cubase-To-SDXL in Cubase"
-        - label: "Reloaded scripts in Cubase (MIDI Remote Manager → ↻)"
+        - label: "Cubase/Nuendo only: unticked In 'All MIDI Inputs' for Cubase-To-SDXL"
+        - label: "Cubase/Nuendo only: reloaded scripts (MIDI Remote Manager → ↻)"
         - label: "Clicked Refresh / Resync in the Setup Assistant"
+        - label: "REAPER only: OSC surface uses pattern DAWDeck, device port 9000, listen port 8000"
   - type: textarea
     id: what-happened
     attributes:
@@ -76,7 +84,7 @@ body:
     attributes:
       label: Steps to reproduce
       placeholder: |
-        1. Select a track in Cubase
+        1. Select a track in the DAW
         2. Press the Rec Arm key
         3. ...
     validations:
@@ -85,4 +93,4 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: A screenshot of the Setup Assistant and of Cubase's MIDI Remote Manager helps a lot.
+      description: A screenshot of the Setup Assistant (and of Cubase's MIDI Remote Manager or REAPER's OSC settings) helps a lot.
