@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in DAWDeck (Cubase, Nuendo, REAPER or Ableton Live) does not work as described.
+description: Something in DAWDeck (Cubase, Nuendo, REAPER, Ableton Live or Yamaha CC1) does not work as described.
 title: "[Bug] "
 labels: ["bug", "triage"]
 body:
@@ -12,14 +12,14 @@ body:
     id: plugin
     attributes:
       label: Plugin
-      options: ["DAWDeck for Cubase & Nuendo", "DAWDeck for REAPER", "DAWDeck for Ableton Live"]
+      options: ["DAWDeck for Cubase & Nuendo", "DAWDeck for REAPER", "DAWDeck for Ableton Live", "DAWDeck for Yamaha CC1"]
     validations:
       required: true
   - type: input
     id: plugin-version
     attributes:
       label: Plugin version
-      description: Stream Deck app → Preferences → Plugins → DAWDeck
+      description: "Stream Deck app → Preferences → Plugins → DAWDeck (Yamaha CC1: the version in the installer file name)"
       placeholder: "1.0.0"
     validations:
       required: true

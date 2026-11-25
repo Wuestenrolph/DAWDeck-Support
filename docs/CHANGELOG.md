@@ -4,6 +4,12 @@ All notable changes to DAWDeck. Versions follow the Stream Deck manifest (`major
 
 ## Unreleased
 
+### New: DAWDeck for Yamaha CC1 (beta, experimental)
+- Standalone desktop app for Windows and macOS (Apple Silicon) that drives the Yamaha CC1 directly over USB. No Stream Deck and no Yamaha ControlCenter needed.
+- Works with Cubase & Nuendo, REAPER and Ableton Live: 12 LCD keys with DAWDeck pages, motorized fader on the selected track with Param-Ride (hold W), pan, Quick Controls, AI knob (AI / Lock / Jog), automation read/write, track select and jog, plus a 60-second calibration.
+- Cubase & Nuendo script: new controls on MIDI channels 8–9 for the CC1 (no change for Stream Deck users; the CC1 and the Stream Deck plugin can run together). Pan reset lands on exact center.
+- Releases include a `DAW-Scripts.zip` for CC1 users without a DAWDeck Stream Deck plugin. Setup: [Yamaha CC1 guide](YAMAHA-CC1.md).
+
 ### Rename
 - New umbrella brand **DAWDeck**: CubaseBridge is now **DAWDeck for Cubase & Nuendo** (`com.dawdeck.cubase`), ReaperBridge is now **DAWDeck for REAPER** (`com.dawdeck.reaper`). Plugin UUIDs, action UUIDs, profiles, the MIDI Remote script (`Local/DAWDeck/StreamDeckXL/DAWDeck_StreamDeckXL.js`), the Colorize PLE presets (*DAWDeck Color 01–16*) and the REAPER OSC pattern (`DAWDeck.ReaperOSC`) are renamed.
 - Upgrading a beta install: remove the old plugin in the Stream Deck app and place the keys again (new UUIDs). The Setup Assistant disables a leftover `CubaseBridge` MIDI Remote script (renamed to `.js.disabled`) so Cubase does not load two drivers; re-run **Install Colorize presets** and, in REAPER, select the `DAWDeck` pattern in the OSC surface.

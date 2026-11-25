@@ -1,12 +1,13 @@
 # DAWDeck — Support
 
-Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck plugins for bidirectional studio & recording control:
+Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck plugins and the Yamaha CC1 app for bidirectional studio & recording control:
 
 | Plugin | For | Connection | Status |
 |---|---|---|---|
 | **DAWDeck for Cubase & Nuendo** | Steinberg Cubase Pro 12–15, Nuendo 12–15 | MIDI Remote script + two virtual MIDI ports | Beta |
 | **DAWDeck for REAPER** | REAPER 7 | REAPER's built-in OSC control surface | Beta (experimental) |
 | **DAWDeck for Ableton Live** | Ableton Live 12 | Bundled Remote Script (Live control surface "DAWDeck") | Beta (experimental) |
+| **DAWDeck for Yamaha CC1** | Yamaha CC1 with Cubase/Nuendo, REAPER or Ableton Live | Desktop app, direct USB (no Stream Deck, no Yamaha ControlCenter) | Beta (experimental) |
 
 ![DAWDeck on a Stream Deck XL](assets/showcase-xl.png)
 
@@ -21,7 +22,8 @@ Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck p
 | Set up DAWDeck for Cubase or Nuendo | [Installation guide](docs/INSTALLATION.md) |
 | Set up DAWDeck for REAPER | [REAPER guide](docs/REAPER.md) |
 | Set up DAWDeck for Ableton Live | [Ableton Live guide](docs/ABLETON.md) |
-| Fix something that doesn't work | [Troubleshooting & known quirks](docs/TROUBLESHOOTING.md) · [REAPER troubleshooting](docs/REAPER.md#troubleshooting) · [Ableton Live troubleshooting](docs/ABLETON.md#troubleshooting) |
+| Set up DAWDeck for Yamaha CC1 | [Yamaha CC1 guide](docs/YAMAHA-CC1.md) |
+| Fix something that doesn't work | [Troubleshooting & known quirks](docs/TROUBLESHOOTING.md) · [REAPER troubleshooting](docs/REAPER.md#troubleshooting) · [Ableton Live troubleshooting](docs/ABLETON.md#troubleshooting) · [Yamaha CC1 troubleshooting](docs/YAMAHA-CC1.md#troubleshooting) |
 | Check if my DAW / Stream Deck / OS is supported | [Compatibility](docs/COMPATIBILITY.md) |
 | See what changed | [Changelog](docs/CHANGELOG.md) |
 | Ask a question | [Discussions → Q&A](../../discussions) |
@@ -33,6 +35,7 @@ Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck p
 2. **Cubase/Nuendo:** untick **In 'All MIDI Inputs'** for `Cubase-To-SDXL` in *Studio → Studio Setup → MIDI Port Setup*.
 3. **REAPER:** the OSC surface must use pattern config **DAWDeck**, device port `9000` and local listen port `8000`.
 4. **Ableton Live:** select **DAWDeck** as Control Surface (Input/Output: None) and restart Live after installing the Remote Script.
+5. **Yamaha CC1:** quit Yamaha ControlCenter before starting DAWDeck for Yamaha CC1; only one app can use the CC1 at a time.
 
 ---
 
@@ -60,6 +63,13 @@ Details: [REAPER guide](docs/REAPER.md).
 
 No loopMIDI, IAC Driver or Max for Live needed. Count-In can only be shown, not changed (Live doesn't allow it). Details: [Ableton Live guide](docs/ABLETON.md).
 
+### Yamaha CC1
+1. Quit Yamaha ControlCenter, then install and start **DAWDeck for Yamaha CC1** (Windows `.exe` or macOS `.dmg`).
+2. Pick your DAW in the app window. If you already use the DAWDeck Stream Deck plugin for that DAW, the DAW side is ready; otherwise install it from the `DAW-Scripts.zip` of the release.
+3. Run **Calibrate 60s** once.
+
+No Stream Deck needed. Details: [Yamaha CC1 guide](docs/YAMAHA-CC1.md).
+
 ---
 
 ## Upgrading from CubaseBridge / ReaperBridge
@@ -73,4 +83,4 @@ When you post an issue or discussion here, it is **public**: please don't includ
 
 ---
 
-*Unofficial integrations, not affiliated with, endorsed or sponsored by Steinberg Media Technologies GmbH, Cockos Incorporated or Ableton AG. Steinberg, Cubase and Nuendo are registered trademarks of Steinberg Media Technologies GmbH. REAPER is a trademark of Cockos Incorporated. Ableton and Ableton Live are trademarks of Ableton AG. Elgato and Stream Deck are trademarks of Corsair Memory, Inc.*
+*Unofficial integrations, not affiliated with, endorsed or sponsored by Steinberg Media Technologies GmbH, Cockos Incorporated, Ableton AG or Yamaha Corporation. Steinberg, Cubase and Nuendo are registered trademarks of Steinberg Media Technologies GmbH. REAPER is a trademark of Cockos Incorporated. Ableton and Ableton Live are trademarks of Ableton AG. Yamaha is a trademark of Yamaha Corporation. Elgato and Stream Deck are trademarks of Corsair Memory, Inc.*
