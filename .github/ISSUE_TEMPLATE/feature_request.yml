@@ -31,4 +31,4 @@ body:
     id: device
     attributes:
       label: Stream Deck model
-      options: ["Stream Deck XL", "Stream Deck MK.2 / Classic", "Stream Deck Neo", "Stream Deck +", "Stream Deck Mini", "Any"]
+      options: ["Stream Deck XL", "Stream Deck MK.2 / Classic", "Stream Deck Neo", "Stream Deck +", "Stream Deck Mini", "Yamaha CC1", "Any"]

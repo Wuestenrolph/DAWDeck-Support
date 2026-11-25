@@ -2,6 +2,7 @@
 
 > REAPER: see [DAWDeck for REAPER](REAPER.md) (beta, tested against REAPER 7.86).
 > Ableton Live: see [DAWDeck for Ableton Live](ABLETON.md) (beta, tested with Live 12.2.5–12.2.7 on Windows).
+> Yamaha CC1: see [DAWDeck for Yamaha CC1](YAMAHA-CC1.md) (beta, Windows 10/11 and macOS on Apple Silicon; not yet tested on a real CC1).
 
 Status for release **1.0.0**. "Verified" means checked against the real Cubase files or a running Cubase; it does not mean every feature was exercised on every version.
 
