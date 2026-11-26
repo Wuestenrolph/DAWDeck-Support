@@ -72,7 +72,7 @@ Verified with FabFilter Pro-Q 3. Cubase offers this right-click option for VST 3
 
 ## The profile is missing or the View keys do nothing
 
-- The bundled profiles are installed when the plugin is installed from the Marketplace or from a `.streamDeckPlugin` file; the Stream Deck app asks you to confirm.
+- The bundled profiles are installed when the plugin is installed from a `.streamDeckPlugin` file (later also from the Elgato Marketplace); the Stream Deck app asks you to confirm.
 - A profile imported by hand (double-clicking a `.streamDeckProfile`) is a plain copy: the keys work, but the **◀ View / View ▶** keys cannot switch its pages. Remove it and reinstall the plugin package to get the plugin-owned profile.
 
 ---

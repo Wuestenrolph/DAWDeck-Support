@@ -12,7 +12,7 @@
 - REAPER 7 (Windows or macOS), started at least once so its resource folder exists
 - Elgato Stream Deck app 7.1 or newer
 
-1. **Install the plugin.** Double-click `com.dawdeck.reaper.streamDeckPlugin` and confirm the profile for your Stream Deck (XL, MK.2, Neo, + or Mini).
+1. **Install the plugin.** Download **DAWDeck for REAPER** (the `.streamDeckPlugin` file) from the [DAWDeck-Support page](https://github.com/Wuestenrolph/DAWDeck-Support#download-the-free-beta), double-click it and confirm the profile for your Stream Deck (XL, MK.2, Neo, + or Mini).
 2. **Install the OSC pattern.** Click any DAWDeck for REAPER key in the Stream Deck app. In the Setup Assistant at the top of its settings, click **Install OSC pattern**. It copies `DAWDeck.ReaperOSC` into `<REAPER resource path>/OSC/`. An existing, different file is kept as `.bak`.
    - Windows: `%APPDATA%\REAPER\OSC\`
    - macOS: `~/Library/Application Support/REAPER/OSC/`

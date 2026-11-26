@@ -11,7 +11,22 @@ Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck p
 
 ![DAWDeck on a Stream Deck XL](assets/showcase-xl.png)
 
-> This repository contains documentation and the issue tracker only. The plugins are in beta.
+---
+
+## Download the free beta
+
+Current version: **v1.0.0-beta.2**. Click the file for your DAW, then double-click the downloaded file to install it in the Stream Deck app.
+
+| I use… | Download |
+|---|---|
+| **Cubase or Nuendo** | [DAWDeck-for-Cubase-Nuendo-v1.0.0-beta.2.streamDeckPlugin](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/DAWDeck-for-Cubase-Nuendo-v1.0.0-beta.2.streamDeckPlugin) |
+| **REAPER** | [DAWDeck-for-REAPER-v1.0.0-beta.2.streamDeckPlugin](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/DAWDeck-for-REAPER-v1.0.0-beta.2.streamDeckPlugin) |
+| **Ableton Live** | [DAWDeck-for-Ableton-Live-v1.0.0-beta.2.streamDeckPlugin](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/DAWDeck-for-Ableton-Live-v1.0.0-beta.2.streamDeckPlugin) |
+| **Yamaha CC1** (no Stream Deck) | [Windows installer](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/DAWDeck-for-Yamaha-CC1-v1.0.0-beta.2-Windows-Setup.exe) · [macOS (Apple Silicon)](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/DAWDeck-for-Yamaha-CC1-v1.0.0-beta.2-macOS-AppleSilicon.dmg) · [DAW scripts](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/DAWDeck-for-Yamaha-CC1-v1.0.0-beta.2-DAW-Scripts.zip) |
+
+All versions and release notes: [Releases](../../releases). DAWDeck is not on the Elgato Marketplace yet; during the beta it is only available here.
+
+> Please don't re-upload the files; link to this page instead. Free to use during the beta, also commercially ([license](https://github.com/Wuestenrolph/DAWDeck-Support/releases/download/v1.0.0-beta.2/LICENSE.txt)).
 
 ---
 
@@ -42,7 +57,7 @@ Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck p
 ## Quick setup
 
 ### Cubase & Nuendo
-1. Install **DAWDeck for Cubase & Nuendo** and confirm the profile for your Stream Deck.
+1. [Download](#download-the-free-beta) and double-click **DAWDeck for Cubase & Nuendo**, then confirm the profile for your Stream Deck.
 2. Create two virtual MIDI ports named exactly `SDXL-To-Cubase` and `Cubase-To-SDXL` (Windows: loopMIDI, macOS: IAC Driver).
 3. Open any DAWDeck key's settings in the Stream Deck app and click **Install / Update Cubase Script**. It installs the script for every Cubase and Nuendo found.
 4. In Cubase or Nuendo: **Studio → MIDI Remote Manager** → **↻** (Reload Scripts).
@@ -50,14 +65,14 @@ Help, documentation and issue tracking for **DAWDeck**, the Elgato Stream Deck p
 Details: [Installation guide](docs/INSTALLATION.md).
 
 ### REAPER
-1. Install **DAWDeck for REAPER** and confirm the profile for your Stream Deck.
+1. [Download](#download-the-free-beta) and double-click **DAWDeck for REAPER**, then confirm the profile for your Stream Deck.
 2. Open any key's settings and click **Install OSC pattern** in the Setup Assistant.
 3. In REAPER: *Preferences → Control/OSC/web → Add → OSC*, pattern config **DAWDeck**, device IP `127.0.0.1`, device port `9000`, local listen port `8000`.
 
 Details: [REAPER guide](docs/REAPER.md).
 
 ### Ableton Live
-1. Install **DAWDeck for Ableton Live** and confirm the profile for your Stream Deck.
+1. [Download](#download-the-free-beta) and double-click **DAWDeck for Ableton Live**, then confirm the profile for your Stream Deck.
 2. Open any key's settings and click **Install Remote Script** in the Setup Assistant.
 3. Restart Live, then *Settings → Link, Tempo & MIDI → Control Surface*: **DAWDeck**, Input and Output **None**.
 
