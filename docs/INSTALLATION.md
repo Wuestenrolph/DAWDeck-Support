@@ -13,7 +13,7 @@ Setting up DAWDeck takes about five minutes. You need two virtual MIDI ports, th
 
 ## 1. Install the plugin and profile
 
-1. Install **DAWDeck** from the Elgato Marketplace (or double-click the `.streamDeckPlugin` file).
+1. Download **DAWDeck for Cubase & Nuendo** (the `.streamDeckPlugin` file) from the [DAWDeck-Support page](https://github.com/Wuestenrolph/DAWDeck-Support#download-the-free-beta) and double-click it. During the beta DAWDeck is not on the Elgato Marketplace.
 2. The Stream Deck app asks whether to install the bundled profiles — **confirm**.
 3. In the Stream Deck app, select the **DAWDeck** profile for your device (XL, MK.2, Neo, + or Mini).
 

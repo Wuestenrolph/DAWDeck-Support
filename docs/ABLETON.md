@@ -12,7 +12,7 @@
 - Ableton Live 12 on Windows or macOS
 - Elgato Stream Deck app 7.1 or newer
 
-1. **Install the plugin.** Double-click `com.dawdeck.ableton.streamDeckPlugin` and confirm the profile for your Stream Deck (XL, MK.2, Neo, + or Mini).
+1. **Install the plugin.** Download **DAWDeck for Ableton Live** (the `.streamDeckPlugin` file) from the [DAWDeck-Support page](https://github.com/Wuestenrolph/DAWDeck-Support#download-the-free-beta), double-click it and confirm the profile for your Stream Deck (XL, MK.2, Neo, + or Mini).
 2. **Install the Remote Script.** Click any DAWDeck for Ableton Live key in the Stream Deck app. In the Setup Assistant at the top of its settings, click **Install Remote Script**. It copies the `DAWDeck` script folder into your Live User Library:
    - Windows: `Documents\Ableton\User Library\Remote Scripts\DAWDeck\` (OneDrive-redirected Documents folders are detected)
    - macOS: `~/Music/Ableton/User Library/Remote Scripts/DAWDeck/`
